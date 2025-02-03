@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Druekompaniet</title>
+  <!-- Legg til eventuelle andre meta-tagger, stiler og skript her -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="bilder/rouge_bak.png" type="image/x-icon">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950277921871627"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="om.html">Om gutta</a></li>
+        <li><a href="https://ostebørsen.no">Ostebørsen</a></li>
+        <li><a href="nabokokkene.html">Nabokokkene</a></li>
+        <li><a href="tallgenerator.html">Eurotallgenerator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+  <!-- VINVELGER -->
+  <div class="container">
+    <h1>Vinvelger</h1>
+    <label for="activities">Velg en aktivitet:</label>
+    <select id="activities">
+      <option value="middagsselskap">Middagsselskap</option>
+      <option value="fest">Festlige sammenkomster</option>
+      <option value="frokost">Frokost</option>
+      <option value="rolig-kveld">Rolige kvelder</option>
+      <option value="hytta">Hytta</option>
+      <option value="romantisk">Romantiske anledninger</option>
+      <option value="ost">Ost & Vin</option>
+      <option value="kultur">Kunst- og kulturopplevelser</option>
+      <option value="piknik">Piknik</option>
+      <option value="familie">Familietreff</option>
+      <option value="restaurant">Restaurantbesøk</option>
+    </select>
+    <button onclick="showRecommendedWine()">Få anbefalt vin</button>
+    <div id="wineRecommendation"></div>
+  </div>
+  <!-- /VINVELGER -->
+
+  <div class="innlegg">
+    <h2 class="overskrift">NYTTÅRS-VIN IN THE MAKING...</h2>
+    <div class="bildekonteiner">
+      <img src="bilder/Diverse/Black_question_mark.png" alt="in the making..." class="sortement">
+    </div>
+    <p class="description"><em></em></p>
+  </div>
+
+  <div class="innlegg">
+    <h2 class="overskrift">GUTTAS RIESLING</h2>
+    <div class="bildekonteiner">
+      <img src="bilder/rieslingForan.png" alt="Bilde av riesling design" class="sortement">
+      <img src="bilder/rieslingBak.png" alt="Bilde av riesling design" class="sortement">
+    </div>
+    <p class="description"><em>“Guttas Riesling er under brygg! Blir vår mest sofistikerte vin by far!!!
+        Den har vært under brygg lenge nå og er snart klar for lansering. Stay tuuuned og gjøre dere klare for
+        årets sommervin. NB! Skal nytes kald... SLAPP AV OG DREKK LITT A!”</em></p>
+  </div>
+
+  <div class="innlegg">
+    <h2 class="overskrift">GUTTAS HVITE</h2>
+    <div class="bildekonteiner">
+      <img src="bilder/Diverse/25.jpg" alt="Bilde av piesporter i skauen" class="sortement">
+      <img src="bilder/Diverse/GHbackside3.jpg" alt="Bilde av piesporter i skauen" class="sortement">
+    </div>
+    <p class="description"><em>“Guttas Hvite er en klassiker som ble veldig populær. Høy prosent og god smak har gjort
+        denne utgaven til en av våre mest annerkjente. Ettersom den var såpass populær har vi dessverre få flasker
+        igjen.”</em></p>
+  </div>
+
+  <div class="innlegg">
+    <h2 class="overskrift">GUTTAS BERRY</h2>
+    <div class="bildekonteiner">
+      <img src="bilder/Berry/berry ny stil-1.jpg" alt="Guttas berry design" class="sortement">
+    </div>
+    <p class="description"><em>“Jaså, så dere er gira på noe ordentlig fyllavin? Den er grei,
+        stikker en tur til italia, plukker de beste bringebærene og blander de sammen med
+        favorittdruene til gutta. Kommer til eksplodere i kjeften med søte frekvenser.
+        Blir harrytur i kjeften av smaker. Kombinasjon av uendelige godterivarianter,
+        alt på ein gong! God paaske”</em></p>
+  </div>
+
+  <div class="innlegg">
+    <h2 class="overskrift">GUTTAS ROUGE</h2>
+    <div class="bildekonteiner">
+      <img src="bilder/Rouge/IMG_9359.JPG" alt="Rouge som står på bordet og tøffer seg" class="sortement">
+      <img src="bilder/Rouge/rougeogglass.jpg" alt="Rouge som står på bordet og tøffer seg" class="sortement">
+      <img src="bilder/Rouge/baksideRouge.jpg" alt="Rouge som står på bordet og tøffer seg" class="sortement">
+    </div>
+    <p class="description">
+      <em>"Guttas rouge er en litt lysere rødvin enn dere kanskje er vant til. Dette er med hensikt for å gi dere en mer
+        lettdrikkelig vin dere kan helle med høy vinkel. Denne utgaven er skapt for å gi dere høy bakrus og høy
+        promille. KOS DERE! (13.9%)"
+      </em>
+    </p>
+  </div>
+
+
+  <div class="innlegg">
+    <h2 class="overskrift">GUTTAS PIESPORTER</h2>
+    <div class="bildekonteiner">
+      <img src="bilder/Piesporter/IMG_7355.JPG" alt="Bilde av piesporter i skauen" class="sortement">
+      <img src="bilder/Piesporter/IMG_7437.JPG" alt="Bilde av piesporter i skauen" class="sortement">
+    </div>
+    <p class="description"><em>“Guttas piesporter er vår andre utgave av guttas drue. Vi har jobbet lenge og
+        iherdig med å skape en perfekt vin som glir søtt og smidig ned halsen og som på veien gir tungen rike smaker.
+        Det blir en vin du kan kose deg med, men også en vin du kan dunke ned for å kjenne at du lever.
+        Druekompaniet vil herved ønske dere en fantastisk smaksopplevelse og en fin kveld videre!”</em></p>
+  </div>
+
+  <div class="innlegg">
+    <h2 class="overskrift">GUTTAS DRUE</h2>
+    <div class="bildekonteiner">
+      <img src="bilder/gd.jpg" alt="Bilde av guttas drue design" class="sortement">
+    </div>
+    <p class="description"><em>"Druekompaniet ble til en sen sommerdag på St. Haugen. Gutta sa seg lei dyre viner fra
+        polet
+        som aldri helt levde opp. På tide å ta saken i egne hender. Vinen gutta produserer er kvalitetsikret fra start
+        til slutt.
+        Det er som Hellstrøm sier: "Råvarer betyr alt!". Dette står bak hele vår produksjon. Vi produserer vinen med kun
+        de beste
+        råvarene fra blant annet de mest sofistikerte regionene i Italia. Derfor kan vi love dere en smaksopplevelse
+        dere sent vil glemme.
+        KOS DERE!"</em></p>
+  </div>
+
+
+
+  <div class="underoverskrift">
+    <h2 class="drekking">DREKKING</h2>
+  </div>
+
+
+  <div class="rad">
+    <div class="kolonne">
+      <img id="bom" src="bilder/Diverse/1.png" alt="Utsikt fra Vettakollen">
+      <img id="b2" src="bilder/Diverse/2.JPG" alt="dragen">
+      <img id="b3" src="bilder/Diverse/3.JPG" alt="går opp bakken">
+    </div>
+    <div class="kolonne">
+      <img id="b4" src="bilder/Diverse/4.JPG" alt="utsikt">
+      <img id="b5" src="bilder/Diverse/5.JPG" alt="gjerry og dragen">
+      <img id="b6" src="bilder/Diverse/6.JPG" alt="gjermund er deilig">
+    </div>
+    <div class="kolonne">
+      <img id="b7" src="bilder/Diverse/7.JPG" alt="gjerry">
+      <img id="b8" src="bilder/Diverse/8.JPG" alt="gjermund på stammen">
+      <img src="bilder/Diverse/17.JPG" alt="">
+    </div>
+    <div class="kolonne">
+      <img id="b9" src="bilder/Diverse/9.JPG" alt="dragen spis pykje">
+      <img id="b10" src="bilder/Diverse/10.JPG" alt="gjerry flexer">
+      <img id="b11" src="bilder/Diverse/11.JPG" alt="">
+    </div>
+  </div>
+
+  <div class="rad">
+    <div class="kolonne">
+      <img id="b12" src="bilder/Diverse/12.JPG" alt="dragen spis pykje">
+      <img id="b13" src="bilder/Diverse/13.JPG" alt="gjerry flexer">
+      <img id="b14" src="bilder/Diverse/14.JPG" alt="">
+    </div>
+    <div class="kolonne">
+      <img id="b15" src="bilder/Diverse/16.JPG" alt="dragen spis pykje">
+      <img id="b16" src="bilder/Diverse/18.JPG" alt="gjerry flexer">
+      <img id="b17" src="bilder/Diverse/19.JPG" alt="">
+    </div>
+    <div class="kolonne">
+      <img id="b18" src="bilder/Diverse/20.JPG" alt="dragen spis pykje">
+      <img id="b19" src="bilder/Diverse/21.JPG" alt="gjerry flexer">
+      <img id="b20" src="bilder/Diverse/22.JPG" alt="">
+    </div>
+    <div class="kolonne">
+      <img id="b21" src="bilder/Diverse/23.JPG" alt="dragen spis pykje">
+      <img id="b22" src="bilder/Diverse/24.JPG" alt="gjerry flexer">
+      <img id="b23" src="bilder/Diverse/25.JPG" alt="">
+    </div>
+  </div>
+
+  <div class="rad">
+    <div class="kolonne">
+      <img id="b24" src="bilder/Diverse/26.JPG" alt="Ola på byn">
+    </div>
+    <div class="kolonne">
+      <img id="b25" src="bilder/Diverse/27.jpg" alt="gjerry">
+    </div>
+  </div>
+
+
+
+  <!--Footer-->
+
+  <div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-section about">
+        <h1 class="logo-text"><span>DRUE</span>KOMPANIET</h1>
+        <p>
+          Gutta har fiksa vin siden atten pil&bue!
+          Vi liner opp med alt fra seriøse smaker til
+          høye prosenter som er skapt for å lage kvalme!!
+        </p>
+        <div class="contact">
+          <span><i class="fa-solid fa-envelope">&nbsp; druekompaniet@gmail.com </i></span>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.instagram.com/druekompaniet/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Sjekk ut</h2>
+        <br>
+        <ul>
+          <a href="index.html">
+            <li>Hjem</li>
+          </a>
+          <a href="om.html">
+            <li>Mer om gutta</li>
+          </a>
+          <a href="blogg.html">
+            <li>To the top!^</li>
+          </a>
+          <a href="https://ostebørsen.no">
+            <li>Ostebørsen</li>
+          </a>
+        </ul>
+      </div>
+
+
+      <div class="footer-section contact-form">
+        <h2>Send oss en melding!</h2>
+        <br>
+        <form action="sendepost.php" method="POST">
+          <input epost="epost" name="navn" class="text-input contact-input" placeholder="epostadresse...">
+          <textarea name="melding" class="text-input contact-input" placeholder="melding...."></textarea>
+          <button type="submit" class="btn btn-big contact-btn">
+            Send
+            <i class="fas fa-envelope"></i>
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; || Website by Gjerry McNugget ||
+    </div>
+  </div>
+
+  <!--//Footer-->
+
+
+  <script src="vinvelger.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

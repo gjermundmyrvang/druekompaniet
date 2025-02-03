@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Eurotallgenerator</title>
+  <!-- Legg til eventuelle andre meta-tagger, stiler og skript her -->
+  <link rel="stylesheet" href="eurostyle.css">
+  <link rel="icon" href="bilder/rouge_bak.png" type="image/x-icon">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950277921871627"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Druekompaniet</a></li>
+            <li><a class="ost" href="https://ostebørsen.no">Ostebørsen</a></li>
+            <li><a href="nabokokkene.html">Nabokokkene</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="overskrift">
+        <h1>TALLGENERATOR</h1>
+      </div>
+
+      <div class="bruker-input">
+    <label for="numRows">ANTALL REKKER</label>
+    <input type="number" id="numRows" min="1" max="10" value="1">
+    <button onclick="generateRows()">MEKK NOEN REKKER A</button>
+    <button id="knapp" onclick="resetRows()">Reset</button>
+    <div id="lotteryRows"></div>
+      </div>
+
+
+      <footer>
+        <p>&copy; 2023 GJERRY. Alle rettigheter reservert.</p>
+      </footer>
+
+      <script src="euroscript.js"></script>
+</body>
+
+
+</html>

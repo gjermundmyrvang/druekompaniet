@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRUEKOMPANIETS QUIZ</title>
+    <link rel="stylesheet" href="quizstyle.css">
+    <link rel="icon" href="bilder/logo/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body class="bodyQuiz">
+    <main class="main">
+        <header style="background: crimson;">
+            <div class="logo">
+                <h1 class="logo-text">DRUEQUIZEN</h1>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li><a href="index.html">HOME</a>
+            </ul>
+        </header>
+
+        <div class="quiz-container">
+            <section class="the-quiz">
+                <div class="quiz-box">
+                    <h1>DRUEQUIZ</h1>
+                    <div class="quiz-header">
+                        <span>QUIZ BY THE BOYZ</span>
+                        <span class="header-score"></span>
+                    </div>
+                    <h2 class="question-text"></h2>
+                    <img src="" class="quiz-bilde" alt="kodesnutt">
+                    <div class="option-list">
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                    </div>
+                    <div class="quiz-footer">
+                        <span class="questions-total"></span>
+                        <button class="next-btn">NEXT</button>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <h2>QUIZ RESULTS</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <span class="score-text"></span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="tryAgain-btn">TRY AGAIN</button>
+                        <button class="goHome-btn">GO HOME</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quiz">
+                <div class="quiz-innhold">
+                    <h1>DRUEQUIZEN TIL GUTTA</h1>
+                    <p>Velkommen til quizen til gutta <br><br>Denne quizen er laget for å teste din kunnskap om vårt
+                        arbeid og generelt litt om vin, druer osv <br><br>Scorer du høyt på denne quizen viser du til
+                        oss at du er en trofast kunde hos oss<br><br>Derfor vil vi kjøre en konkurranse. <br><br>Din
+                        oppgave blir å score så høyt du klarer og sende screenshot av resultatet til oss på
+                        DM(@druekompaniet). Vi trekker en vinner som får en flaske med guttas nyttårsvin. Vinneren
+                        trekkes 31.desember. LYKKE TIL!
+                    </p>
+                    <button class="start-btn">START QUIZ</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-info">
+        <h1>GUIDELINES</h1>
+        <span class="info">1. Only one answer is correct.</span>
+        <span class="info">2. Read the code snippets carefully before answering.</span>
+        <span class="info">3. Correct answers will be highlighted in green, wrong ones in red.</span>
+        <span class="info">4. You are not being timed, so don't stress.</span>
+        <span class="info">5. Finally, good luck!.</span>
+        <div class="btn-group">
+            <button class="info-btn exit-btn">EXIT</button>
+            <a href="#" class="info-btn continue-btn">CONTINUE</a>
+        </div>
+    </div>
+
+
+    <script src="druequiz.js"></script>
+    <script src="questions.js"></script>
+
+</body>
+
+</html>

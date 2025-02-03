@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: crimson;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-flex;
+    margin-right: 30px;
+  }
+
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+    transition: ease 0.3s;
+  }
+
+  nav ul li a:hover{
+    color: crimson;
+    transition: all .3s;
+    margin-right: 15px;
+    transition: all 0.3s;
+  }
+
+
+.nabokokkene {
+    margin-top: 60px;
+}
+
+.nabokokkene > h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 12em;
+}
+
+.nabokokkene img {
+    overflow: hidden;
+}
+
+.burger-veggis {
+  text-align: center;
+}
+
+footer {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.grillfest {
+  margin-top: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.grillfest > h2{ 
+  font-size: 70px;
+}
+
+.grillfest p { 
+  font-size: 40px;
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.grillfest img {
+  padding-top: 50px;
+}
+
+
+/* Om gutta */
+
+.profiler {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.kokk {
+  width: 70%;
+  display: flex;
+  margin-bottom: 60px;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.image {
+  width: 30%;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 1rem -1rem #5e5e5e;
+}
+
+
+.text {
+  width: 70%;
+  padding-left: 20px;
+  flex-direction: column; /* Legger til kolonnebasert layout for tekstinnhold */
+  align-items: flex-start;
+}
+
+.text p {
+  font-size: 40px;
+}
+
+.text h2 {
+  font-size: 100px;
+}
+
+
+
+/* Media query for responsivt design */
+@media (max-width: 600px) {
+  footer {
+    font-size: 14px;
+  }
+}
+
+
+
+
